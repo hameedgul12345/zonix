@@ -1,0 +1,30 @@
+Solution 2: Use a Personal Access Token (PAT)
+GitHub removed password authentication for Git over HTTPS. Instead, you need a Personal Access Token (PAT).
+
+Generate a Token:
+
+Go to GitHub > Settings > Developer Settings > Personal Access Tokens
+
+Click Generate new token (classic)
+
+Select scopes:
+
+✅ repo (for private repositories)
+
+Generate and copy the token.
+
+Use the Token for Git: Replace your current Git remote URL with:
+
+sh
+Copy
+Edit
+git remote set-url origin https://hameedgul12345:<your_personal_access_token>@github.com/hameedgul12345/zonix.git
+(Replace <your_personal_access_token> with the copied token.)
+
+Push Again:
+
+sh
+Copy
+Edit
+git push origin layout
+Solution 3: Use SSH I
