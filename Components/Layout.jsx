@@ -14,7 +14,7 @@ function Layout({ children }) {
 
   if (!isMounted) return null;
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
       <header
         style={{ }}
         className="fixed top-0 left-0 w-full bg-gray-900 text-white py-6 z-50"
@@ -92,7 +92,7 @@ function Layout({ children }) {
             {/* Get a Quote Button */}
             <Link
               href="/get-quote"
-              className="bg-[#ed3519] hidden md:block text-sm hover:bg-red-600 text-white font-semibold py-1.5 px-5 rounded-full"
+              className="bg-[#fe4022] hidden md:block text-sm hover:bg-red-600 text-white font-semibold py-1.5 px-5 rounded-full"
               passHref
             >
               Get Started
@@ -169,11 +169,12 @@ function Layout({ children }) {
         </div>
       </header>
 
-      {children}
+      <main className="flex-grow pt-24">{children}</main>
+      
       <footer className="bg-gray-900 text-white py-10">
         <div className="max-w-6xl mx-auto px-5 grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
           {/* Brand & Socials */}
-          <div className="flex justify-between flex-col gap-4">
+          <div className="flex justify-between items-center md:items-start flex-col gap-4">
           <div className="flex items-center">
             <Link href="/" passHref>
               <Image
@@ -220,7 +221,7 @@ function Layout({ children }) {
           {/* Useful Links */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Useful Links</h3>
-            <ul className="space-y-2">
+            <ul className="space-y-2 flex flex-row md:flex-col gap-2 justify-center">
               <li>
                 <a href="#" className="text-gray-400 hover:text-white">
                   About us
@@ -247,11 +248,11 @@ function Layout({ children }) {
           {/* Support Section */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Support</h3>
-            <ul className="space-y-2">
+            <ul className="space-y-2 flex flex-row md:flex-col gap-2 justify-center">
               <li>
                 <a href="#" className="text-gray-400 hover:text-white">
                   Help Center
-                </a>
+                </a> 
               </li>
               <li>
                 <a href="#" className="text-gray-400 hover:text-white">
@@ -274,8 +275,8 @@ function Layout({ children }) {
           {/* Contact Information */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact Information</h3>
-            <div className="flex flex-col gap-3">
-              <p className="text-gray-400 flex items-center justify-center md:justify-start">
+            <div className="flex flex-col items-start md:items-start gap-3">
+              <p className="text-gray-400 flex items-center  justify-center md:justify-start">
                 <i className="ri-map-pin-line text-white text-xl bg-[#ed3519] p-1 rounded-full w-8 h-8 flex items-center justify-center mr-2"></i>
                 Dalazak Road Daman Hindki, Peshawar Pakistan
               </p>

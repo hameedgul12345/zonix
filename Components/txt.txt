@@ -1,0 +1,13 @@
+<div className="bg-red-500 rounded-lg p-6 flex flex-col md:flex-row items-center justify-between">
+                  <div className="text-white text-center md:text-left">
+                    <p className="text-sm">GET A FREE CONSULTATION</p>
+                    <p className="text-2xl font-bold">987 233 0000</p>
+                  </div>
+                  <p className="text-gray-200 text-sm mt-4 md:mt-0">
+                    We're ready to help your business grow. Contact us today for
+                    expert advice and tailored solutions.
+                  </p>
+                  <button className="bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition mt-4 md:mt-0">
+                    MAKE APPOINTMENT
+                  </button>
+                </div>
