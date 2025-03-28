@@ -35,7 +35,7 @@
 //               .
 //             </div>
 //           </div>
-//           <h1 style={{fontSize:'42px'}} className="text-5xl mt-4 md:text-5xl text-center text-white font-extrabold leading-tight">
+//           <h1 style={{fontSize:'42px'}} className="text-5xl mt-4 md:text-5xl text-center text-black font-extrabold leading-tight">
 //             <span className="text-[#ed3519]">Digital</span> Agency You <br />
 //             Can Rely Upon!
 //           </h1>
@@ -115,9 +115,35 @@
 // }
 
 // export default Home;
-import React from "react";
+"use client";
+import Link from "next/link";
+import React, { useState } from "react";
 
 function Home() {
+  const teamMembers = [
+    {
+      name: "Sony Madison",
+      role: "CEO, Director",
+      image: "/images/a.jpg",
+    },
+    {
+      name: "Hary Warth",
+      role: "Head Manager",
+      image: "/images/b.jpg",
+    },
+    {
+      name: "Jenny Hobb",
+      role: "Branch Manager",
+      image: "/images/c.jpg",
+    },
+    {
+      name: "Johny Smith",
+      role: "Supervisor",
+      image: "/images/d.jpg",
+    },
+  ];
+
+  const [hover, setHover] = useState(false);
   return (
     <>
       {/* Hero Section */}
@@ -233,11 +259,9 @@ function Home() {
               backgroundPosition: "center" /* Center the image */,
               backgroundRepeat: "no-repeat" /* Do not repeat the image */,
               backgroundSize: "cover",
-              
-
             }}
           >
-            <div className="flex flex-col md:flex-row justify-around items-center gap-4">
+            <div className="flex flex-col md:flex-row justify-around items-center py-4 gap-4">
               <div className="flex flex-col justify-between items-start px-6">
                 <div className=" mt-16 flex flex-row items-center justify-center px-2 py-1 w-42 bg-white rounded-2xl gap-2">
                   <div className="bg-[#fe4022] text-[#fe4022] w-2 h-2 text-sm rounded-full flex items-center justify-center">
@@ -257,43 +281,221 @@ function Home() {
                   Help You With !
                 </h1>
                 <p className="text-white mt-2">
-                  We help businesses with web development, SEO, and branding. 
-                  Our team is dedicated to creating innovative digital solutions 
+                  We help businesses with web development, SEO, and branding.
+                  Our team is dedicated to creating innovative digital solutions
                   that drive success.
                 </p>
                 <ul className="text-white mt-2 list-inside">
-                  <li>✅ Custom Website Development for a strong online presence.</li>
+                  <li>
+                    ✅ Custom Website Development for a strong online presence.
+                  </li>
                   <li>✅ Effective SEO strategies to boost search rankings.</li>
-                  <li>✅ User-friendly UI/UX design for seamless experiences.</li>
-                  <li>✅ Digital marketing planning to enhance brand visibility.</li>
-                 
+                  <li>
+                    ✅ User-friendly UI/UX design for seamless experiences.
+                  </li>
+                  <li>
+                    ✅ Digital marketing planning to enhance brand visibility.
+                  </li>
                 </ul>
+                <div className="flex flex-row items-center justify-between gap-6 mt-4">
+                  {/* Profile Section */}
+                  <div className="flex flex-row justify-between gap-2 items-start">
+                    <img
+                      src="https://via.placeholder.com/50"
+                      alt="Profile"
+                      className="w-14 h-14 rounded-full border-2 border-red-500"
+                    />
+                    <div className="flex flex-col items-start justify-center">
+                      <h2 className="text-lg text-white font-semibold">
+                        Hameed Gul
+                      </h2>
+                      <p className="text-gray-400 text-sm">Owner of Zonix</p>
+                    </div>
+                  </div>
+
+                  {/* Divider */}
+                  <div className="h-10 w-px bg-gray-600"></div>
+
+                  {/* Button */}
+                  <button className="bg-red-500 text-white font-semibold px-6 py-2 rounded-full hover:bg-red-600 transition">
+                    MORE SERVICES
+                  </button>
+                </div>
               </div>
               <div className="flex flex-wrap justify-center gap-6 mt-8">
-                <div className="bg-gray-800 p-6 rounded-lg text-center w-60">
-                  <div className="text-red-500 text-4xl mb-2">💻</div>
-                  <h3 className="font-semibold text-lg">Website Development</h3>
-                </div>
-                <div className="bg-gray-800 p-6 rounded-lg text-center w-60">
-                  <div className="text-red-500 text-4xl mb-2">🎨</div>
-                  <h3 className="font-semibold text-lg">
-                    Graphic & Sketch Designing
+                <div className="bg-gray-800  ml-12 md:mr-0 p-6 rounded-lg text-center w-95 h-90 md:w-65 md:h-60">
+                  <div className="text-red-500 text-8xl mb-2">
+                    <i className="ri-webhook-line"></i>
+                  </div>
+                  <h3 className="font-semibold text-white text-lg">
+                    Website <br /> Development
                   </h3>
                 </div>
-                <div className="bg-gray-800 p-6 rounded-lg text-center w-60">
-                  <div className="text-red-500 text-4xl mb-2">✍️</div>
-                  <h3 className="font-semibold text-lg">
-                    SEO & Content Writing
+                <div className="bg-gray-800  ml-12 md:mr-0 ml-12 md:mr-0  p-6 rounded-lg text-center w-95 h-90 md:w-65 md:h-60">
+                  <div className="text-red-500 text-8xl mb-2">
+                    <i className="ri-sketching"></i>
+                  </div>
+                  <h3 className="font-semibold text-lg text-white">
+                    Graphic & Sketch <br /> Designing
                   </h3>
                 </div>
-                <div className="bg-gray-800 p-6 rounded-lg text-center w-60">
-                  <div className="text-red-500 text-4xl mb-2">📊</div>
-                  <h3 className="font-semibold text-lg">
-                    Digital Market Planning
+                <div className="bg-gray-800 p-6 rounded-lg text-center w-95 h-90 md:w-65 md:h-60">
+                  <div className="text-red-500 text-8xl mb-2">✍️</div>
+                  <h3 className="font-semibold text-white text-lg">
+                    SEO & Content <br /> Writing
+                  </h3>
+                </div>
+                <div className="bg-gray-800 p-6 rounded-lg text-center w-95 h-90 md:w-65 md:h-60">
+                  <div className="text-red-500 text-8xl mb-2">
+                    <i className="ri-bar-chart-2-line"></i>
+                  </div>
+                  <h3 className="font-semibold text-white text-lg">
+                    Digital Market <br /> Planning
                   </h3>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="text-center py-12 bg-white">
+        {/* Header Section */}
+        <div className="flex flex-col items-center justify-center px-2">
+          <div className=" flex flex-row items-center justify-center px-2 py-1 w-42 bg-white shadow-lg shadow-blue-200 rounded-2xl gap-2">
+            <div className="bg-[#fe4022] text-[#fe4022] w-2 h-2 text-sm rounded-full flex items-center justify-center">
+              .
+            </div>
+            <h3 className="text-black text-lg">Digital Agency</h3>
+            <div className="bg-[#fe4022] text-[#fe4022] w-2 h-2 text-sm rounded-full flex items-center justify-center">
+              .
+            </div>
+          </div>
+          <h2 className="text-3xl font-bold mt-3">
+            <span className="text-red-500">Activities</span> We Completed
+          </h2>
+          <p className="text-gray-500 mt-2 max-w-2xl mx-auto">
+            Sint nascetur facere, delectus conubia consequuntur, nonummy
+            distinctio! Non officiis, id natus non nisi provident justo.
+          </p>
+        </div>
+
+        {/* Grid Section */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-6 max-w-5xl mx-auto">
+          {/* Portfolio Items */}
+          {[
+            {
+              img: "/images/a.jpg",
+              title: "Digital Marketing",
+            },
+            { img: "/images/b.jpg", title: "Web Development" },
+            { img: "/images/c.jpg", title: "Planning And Development" },
+            { img: "/images/d.jpg", title: "Group Meeting" },
+            { img: "/images/e.jpg", title: "Plan Implementation" },
+            { img: "/images/f.jpg", title: "Business Management" },
+          ].map((item, index) => (
+            <div
+              key={index}
+              className="relative group rounded-lg overflow-hidden shadow-lg"
+            >
+              <img
+                src={item.img}
+                alt={item.title}
+                className="w-full h-full object-cover"
+              />
+              {item.title && (
+                <div
+                  style={{
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    width: "100%",
+                    height: "100%",
+                    backgroundColor: "rgba(0, 0, 0, 0)", // Default transparent
+                    transition: "background-color 0.75s ease-in-out",
+                  }}
+                  onMouseEnter={(e) =>
+                    (e.currentTarget.style.backgroundColor =
+                      "rgba(0, 0, 0, 0.5)")
+                  }
+                  onMouseLeave={(e) =>
+                    (e.currentTarget.style.backgroundColor = "rgba(0, 0, 0, 0)")
+                  }
+                  className="absolute inset-0  flex items-center justify-center opacity-0 group-hover:opacity-100 transition"
+                >
+                  <div className="text-white text-center p-4">
+                    <h3 className="text-lg font-bold">{item.title}</h3>
+                    <p className="text-sm">
+                      Ullam aliquet metus dignissim scelerisque. Anim
+                      exercitation officiis, accusamus.
+                    </p>
+                  </div>
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <div className="bg-gray-100 py-12 px-6 text-center">
+          <div className="text-sm font-semibold uppercase text-red-500">
+            Our Team
+          </div>
+          <h2 className="text-3xl font-bold text-gray-800 mt-2">
+            <span className="text-red-500">Team</span> Members
+          </h2>
+          <p className="text-gray-500 max-w-2xl mx-auto mt-4">
+            Sint nascetur facere, delectus conubia consequuntur, nonummy
+            distinctio! Non officiis, id natus non nisl provident justo.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+            {teamMembers.map((member, index) => (
+              <div
+                key={index}
+                className="bg-white min-h-[320px] rounded-lg relative shadow-lg "
+              >
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  className="w-full h-60 object-cover rounded-md mb-4"
+                />
+                <div
+                  className="flex flex-col justify-center  bg-[#F94C30] w-46 h-18 items-center absolute top-50 left-[25%] md:left-12  rounded-xl"
+                  
+                >
+                  <h3 className="text-lg font-bold text-white">
+                    {member.name}
+                  </h3>
+                  <p className="text-white font-semibold">{member.role}</p>
+                </div>
+                {/* Social Icons & Search */}
+                <div  className="flex items-center absolute top-70 left-[25%] md:left-12  space-x-4">
+                  <div>
+                    <Link href="https://www.facebook.com/profile.php?id=61553447804011&mibextid=ZbWKwL">
+                      <i className="ri-facebook-circle-fill  text-black text-xl  hover:bg-[#F94C30] hover:text-white p-1 rounded-full "></i>
+                    </Link>
+                  </div>
+                  <div>
+                    <Link href="https://www.linkedin.com/in/hameed-gul-408453269/">
+                      <i className="ri-linkedin-fill text-black text-xl   hover:bg-[#F94C30] hover:text-white p-1 rounded-full "></i>
+                    </Link>
+                  </div>
+                  <div>
+                    <Link href="https://github.com/hameedgul12345">
+                      <i className="ri-github-fill text-black text-xl hover:bg-[#F94C30] hover:text-white p-1 rounded-full "></i>
+                    </Link>
+                  </div>
+                  <div>
+                    <Link href="https://www.instagram.com/hameedgulfirebase31590/">
+                      <i className="ri-instagram-line  text-black text-xl  hover:bg-[#F94C30] hover:text-white p-1 rounded-full "></i>
+                    </Link>
+                  </div>
+
+                  {/* Get a Quote Button */}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>

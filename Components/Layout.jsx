@@ -169,8 +169,8 @@ function Layout({ children }) {
         </div>
       </header>
 
-      <main className="flex-grow pt-24">{children}</main>
-      
+      <main className="flex-grow">{children}</main>
+
       <footer className="bg-gray-900 text-white py-10">
         <div className="max-w-6xl mx-auto px-5 grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
           {/* Brand & Socials */}
