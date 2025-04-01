@@ -118,7 +118,7 @@
 "use client";
 import Link from "next/link";
 import React, { useState } from "react";
-
+import Image from "next/image";
 function Home() {
   const teamMembers = [
     {
@@ -143,6 +143,46 @@ function Home() {
     },
   ];
 
+  // const reviews = [
+  //   {
+  //     id: 1,
+  //     text: "Vero id posture tempus aspernatur quaerat mollis voluptatum eveniet porro viverra libero habitasse porro.",
+  //     name: "John Smith",
+  //     role: "clients",
+  //   },
+  //   {
+  //     id: 2,
+  //     text: "Vero id posture tempus aspernatur quaerat mollis voluptatum eveniet porro viverra libero habitasse porro.",
+  //     name: "Miley Cyrus",
+  //     role: "Supervisor",
+  //   },
+  //   {
+  //     id: 3,
+  //     text: "Vero id posture tempus aspernatur quaerat mollis voluptatum eveniet porro viverra libero habitasse porro.",
+  //     name: "Thomas Wolter",
+  //     role: "Customer",
+  //   },
+  // ];
+  const reviews = [
+    {
+      id: 1,
+      name: "John Smith",
+      role: "Client",
+      text: "Vero id posuere tempus aspernatur quaerat mollis voluptatum eveniet porro viverra libero habitasse porro.",
+    },
+    {
+      id: 2,
+      name: "Sarah Johnson",
+      role: "Customer",
+      text: "Vero id posuere tempus aspernatur quaerat mollis voluptatum eveniet porro viverra libero habitasse porro.",
+    },
+    {
+      id: 3,
+      name: "Michael Brown",
+      role: "Client",
+      text: "Vero id posuere tempus aspernatur quaerat mollis voluptatum eveniet porro viverra libero habitasse porro.",
+    },
+  ];
   const [hover, setHover] = useState(false);
   return (
     <>
@@ -439,8 +479,14 @@ function Home() {
 
       <section>
         <div className="bg-gray-100 py-12 px-6 text-center">
-          <div className="text-sm font-semibold uppercase text-red-500">
-            Our Team
+          <div className="mx-auto mt-16 flex flex-row items-center justify-center px-2 py-1 w-42 bg-white rounded-2xl gap-2">
+            <div className="bg-[#fe4022] text-[#fe4022] w-2 h-2 text-sm rounded-full flex items-center justify-center">
+              .
+            </div>
+            <h3 className="text-black text-lg">Digital Agency</h3>
+            <div className="bg-[#fe4022] text-[#fe4022] w-2 h-2 text-sm rounded-full flex items-center justify-center">
+              .
+            </div>
           </div>
           <h2 className="text-3xl font-bold text-gray-800 mt-2">
             <span className="text-red-500">Team</span> Members
@@ -460,17 +506,14 @@ function Home() {
                   alt={member.name}
                   className="w-full h-60 object-cover rounded-md mb-4"
                 />
-                <div
-                  className="flex flex-col justify-center  bg-[#F94C30] w-46 h-18 items-center absolute top-50 left-[25%] md:left-12  rounded-xl"
-                  
-                >
+                <div className="flex flex-col justify-center  bg-[#F94C30] w-46 h-18 items-center absolute top-50 left-[25%] md:left-12  rounded-xl">
                   <h3 className="text-lg font-bold text-white">
                     {member.name}
                   </h3>
                   <p className="text-white font-semibold">{member.role}</p>
                 </div>
                 {/* Social Icons & Search */}
-                <div  className="flex items-center absolute top-70 left-[25%] md:left-12  space-x-4">
+                <div className="flex items-center absolute top-70 left-[25%] md:left-12  space-x-4">
                   <div>
                     <Link href="https://www.facebook.com/profile.php?id=61553447804011&mibextid=ZbWKwL">
                       <i className="ri-facebook-circle-fill  text-black text-xl  hover:bg-[#F94C30] hover:text-white p-1 rounded-full "></i>
@@ -496,6 +539,180 @@ function Home() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 px-4 overflow-hidden sm:px-6 lg:px-8 bg-gray-900  relative">
+        <div
+        className=""
+          style={{
+            backgroundImage: "url('/images/earth.png')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            width: "100vw",
+            minHeight: "60vh",
+           
+          }}
+        >
+          <div className="flex mx-auto w-[80%] flex-col md:flex-row justify-center items-start pb-2 gap-4 md:gap-16">
+            <div className="flex flex-col md:w-[33%] w-[100%] justify-between items-start">
+              <div className=" md:mt-16 flex flex-row items-center justify-center py-1 w-42 bg-white rounded-2xl gap-2">
+                <div className="bg-[#fe4022] text-[#fe4022] w-2 h-2 text-sm rounded-full flex items-center justify-center">
+                  .
+                </div>
+                <h3 className="text-black text-sm">CLIENT REVIEWS</h3>
+                <div className="bg-[#fe4022] text-[#fe4022] w-2 h-2 text-sm rounded-full flex items-center justify-center">
+                  .
+                </div>
+              </div>
+
+              <div className="flex flex-row justify-center items-center gap-4">
+                <h1
+                  style={{ fontSize: "34px" }}
+                  className="text-[#ed3519] text-lg md:mt-4 md:text-5lg font-semibold leading-tight"
+                >
+                  Review's
+                </h1>
+                <h1
+                  style={{ fontSize: "34px" }}
+                  className="text-lg md:mt-4 md:text-sm text-white font-semibold leading-tight"
+                >
+                  Of Clients
+                </h1>
+              </div>
+            </div>
+            <div className="md:w-[33%] w-[100%] text-white md:mt-16">
+              <p>
+                Vero id posuere tempus aspernatur quaerat mollis voluptatum
+                eveniet porro viverra libero habitasse porro fames quos pharetra
+                diam cupidatat ligula reet.
+              </p>
+            </div>
+            <div className="md:w-[25%] w-[100%]">
+              <div className=" md:mt-16 flex flex-row items-center justify-center px-2 py-4 w-42 bg-white rounded-4xl gap-2">
+                <div className="bg-[#fe4022] text-[#fe4022] w-2 h-2 text-sm rounded-full flex items-center justify-center">
+                  .
+                </div>
+                <h3 className="text-black text-sm">VIEW MORE</h3>
+                <div className="bg-[#fe4022] text-[#fe4022] w-2 h-2 text-sm rounded-full flex items-center justify-center">
+                  .
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="w-[80%] mx-auto flex flex-col md:flex-row justify-center items-center md:mt-2 mt-4  gap-12">
+            <div className="md:w-[33%] w-[50%S] relative ">
+              {/* Image positioned above the box */}
+              <div className="absolute -top-0 left-14 transform -translate-x-1/2 z-10">
+                <Image
+                  src="/images/profile.webp"
+                  alt="John Smith"
+                  width={60}
+                  height={60}
+                  className="border-4 border-white rounded-full"
+                />
+              </div>
+
+              {/* Dark box positioned below */}
+              <div className="mt-8 rounded-xl text-white pt-8 px-6 pb-2 bg-[#171717]">
+                <div>
+                  <p className="text-sm pt-2">
+                    Vero id posuere tempus aspernatur quaerat mollis voluptatum
+                    eveniet porro viverra libero habitasse porro.
+                  </p>
+                </div>
+                <hr  className="text-[#292929] mt-2"/>
+                <div className="flex flex-row justify-between items-start gap-4">
+                  <div className="flex flex-col py-2 justify-center items-start gap-1">
+                    <h1>John Smith</h1>
+                    <h3 className="text-sm">Customer</h3>
+                  </div>
+                  <div className="flex flex-row justify-center items-center py-2 gap-2">
+                  <i className="ri-star-fill text-yellow-300 text-sm"></i>
+                  <i className="ri-star-fill text-yellow-300 text-sm"></i>
+                  <i className="ri-star-fill text-yellow-300 text-sm"></i>
+                  <i className="ri-star-fill text-yellow-300 text-sm"></i>
+                  <i className="ri-star-fill text-yellow-300 text-sm"></i>
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="md:w-[33%] w-[50%S] relative ">
+              {/* Image positioned above the box */}
+              <div className="absolute -top-0 left-14 transform -translate-x-1/2 z-10">
+                <Image
+                  src="/images/profile.webp"
+                  alt="John Smith"
+                  width={60}
+                  height={60}
+                  className="border-4 border-white rounded-full"
+                />
+              </div>
+
+              {/* Dark box positioned below */}
+              <div className="mt-8 rounded-xl text-white pt-8 px-6 pb-2 bg-[#171717]">
+                <div>
+                  <p className="text-sm pt-2">
+                    Vero id posuere tempus aspernatur quaerat mollis voluptatum
+                    eveniet porro viverra libero habitasse porro.
+                  </p>
+                </div>
+                <hr  className="text-[#292929] mt-2"/>
+                <div className="flex flex-row justify-between items-start gap-4">
+                  <div className="flex flex-col py-2 justify-center items-start gap-1">
+                    <h1>John Smith</h1>
+                    <h3 className="text-sm">Customer</h3>
+                  </div>
+                  <div className="flex flex-row justify-center items-center py-2 gap-2">
+                  <i className="ri-star-fill text-yellow-300 text-sm"></i>
+                  <i className="ri-star-fill text-yellow-300 text-sm"></i>
+                  <i className="ri-star-fill text-yellow-300 text-sm"></i>
+                  <i className="ri-star-fill text-yellow-300 text-sm"></i>
+                  <i className="ri-star-fill text-yellow-300 text-sm"></i>
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="md:w-[33%] w-[50%S] relative ">
+              {/* Image positioned above the box */}
+              <div className="absolute -top-0 left-14 transform -translate-x-1/2 z-10">
+                <Image
+                  src="/images/profile.webp"
+                  alt="John Smith"
+                  width={60}
+                  height={60}
+                  className="border-4 border-white rounded-full"
+                />
+              </div>
+
+              {/* Dark box positioned below */}
+              <div className="mt-8 rounded-xl text-white pt-8 px-6 pb-2 bg-[#171717]">
+                <div>
+                  <p className="text-sm pt-2">
+                    Vero id posuere tempus aspernatur quaerat mollis voluptatum
+                    eveniet porro viverra libero habitasse porro.
+                  </p>
+                </div>
+                <hr  className="text-[#292929] mt-2"/>
+                <div className="flex flex-row justify-between items-start gap-4">
+                  <div className="flex flex-col py-2 justify-center items-start gap-1">
+                    <h1>John Smith</h1>
+                    <h3 className="text-sm">Customer</h3>
+                  </div>
+                  <div className="flex flex-row justify-center items-center py-2 gap-2">
+                  <i className="ri-star-fill text-yellow-300 text-sm"></i>
+                  <i className="ri-star-fill text-yellow-300 text-sm"></i>
+                  <i className="ri-star-fill text-yellow-300 text-sm"></i>
+                  <i className="ri-star-fill text-yellow-300 text-sm"></i>
+                  <i className="ri-star-fill text-yellow-300 text-sm"></i>
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
