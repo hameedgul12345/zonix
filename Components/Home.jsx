@@ -207,7 +207,7 @@ function Home() {
               opacity: 0.5,
             }}
           ></div>
-          <div className="md:block hidden absolute top-12 left-0 flex-col items-center justify-center gap-6 h-screen w-full">
+          <div className="md:block hidden absolute top-20 left-0 flex-col items-center justify-center gap-6 h-screen w-full">
             <div className="mx-auto mt-16 flex flex-row items-center justify-center px-2 py-1 w-42 bg-white rounded-2xl gap-2">
               <div className="bg-[#fe4022] text-[#fe4022] w-2 h-2 text-sm rounded-full flex items-center justify-center">
                 .
@@ -218,14 +218,14 @@ function Home() {
               </div>
             </div>
             <h1
-              style={{ fontSize: "42px" }}
+              style={{ fontSize: "32px" }}
               className="text-5xl mt-4 md:text-5xl text-center text-white font-extrabold leading-tight"
             >
               <span className="text-[#ed3519]">Digital</span> Agency You <br />
               Can Rely Upon!
             </h1>
             <p
-              style={{ fontSize: "16px" }}
+              style={{ fontSize: "14px" }}
               className="mt-4 px-6 text-center text-white"
             >
               We help businesses with web development, SEO, and branding. Our
@@ -238,14 +238,14 @@ function Home() {
 
             <div className="mt-6 flex justify-center gap-4">
               <button
-                style={{ fontSize: "16px" }}
-                className="bg-[#ed3519] text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-red-700 transition"
+                style={{ fontSize: "14px" }}
+                className="bg-[#ed3519] text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-red-700 transition"
               >
                 DISCOVER MORE
               </button>
               <button
-                style={{ fontSize: "16px" }}
-                className="bg-white text-black px-6 py-3 rounded-full text-sm font-semibold hover:bg-gray-300 transition"
+                style={{ fontSize: "14px" }}
+                className="bg-white text-black px-4 py-2 rounded-full text-sm font-semibold hover:bg-gray-300 transition"
               >
                 HIRE US NOW
               </button>
