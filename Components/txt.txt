@@ -11,3 +11,149 @@
                     MAKE APPOINTMENT
                   </button>
                 </div>
+
+
+
+
+
+
+
+
+
+
+
+                 <div className="bg-gray-900 text-white py-12">
+              <div className="max-w-7xl flex flex-row justify-around px-6">
+                <div className="text-left mb-8">
+                  <span className="bg-red-500 text-white text-xs px-3 py-1 rounded-full">
+                    🔥 SERVICES LIST
+                  </span>
+                  <h2 className="text-3xl font-bold mt-2">
+                    <span className="text-red-500">Services</span> We Can Help
+                    You With!
+                  </h2>
+                  <p className="text-gray-400 mt-2">
+                    We help businesses with web development, SEO, and branding.
+                    Our team is dedicated to creating innovative digital
+                    solutions that drive success.
+                  </p>
+                  <ul className="text-gray-400 mt-2 list-disc list-inside">
+                    <li>Nobis ridiculus cupiditate expedita commodi.</li>
+                    <li>Ipsum dui consider ab quibusdam molestias.</li>
+                  </ul>
+                  <div className="flex items-center mt-4 space-x-4">
+                    <div className="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center">
+                      <span className="text-sm font-semibold">GS</span>
+                    </div>
+                    <div>
+                      <p className="font-semibold">George Smith</p>
+                      <p className="text-sm text-gray-400">CEO, Director</p>
+                    </div>
+                    <button className="bg-red-500 hover:bg-red-600 px-4 py-2 rounded-lg text-sm font-semibold">
+                      MORE SERVICES
+                    </button>
+                  </div>
+                </div>
+
+               
+                {/* Services List */}
+                <div className="flex flex-wrap justify-center gap-6 mt-8">
+                  <div className="bg-gray-800 p-6 rounded-lg text-center w-60">
+                    <div className="text-red-500 text-4xl mb-2">💻</div>
+                    <h3 className="font-semibold text-lg">
+                      Website Development
+                    </h3>
+                  </div>
+                  <div className="bg-gray-800 p-6 rounded-lg text-center w-60">
+                    <div className="text-red-500 text-4xl mb-2">🎨</div>
+                    <h3 className="font-semibold text-lg">
+                      Graphic & Sketch Designing
+                    </h3>
+                  </div>
+                  <div className="bg-gray-800 p-6 rounded-lg text-center w-60">
+                    <div className="text-red-500 text-4xl mb-2">✍️</div>
+                    <h3 className="font-semibold text-lg">
+                      SEO & Content Writing
+                    </h3>
+                  </div>
+                  <div className="bg-gray-800 p-6 rounded-lg text-center w-60">
+                    <div className="text-red-500 text-4xl mb-2">📊</div>
+                    <h3 className="font-semibold text-lg">
+                      Digital Market Planning
+                    </h3>
+                  </div>
+                </div>
+
+                {/* Contact Section */}
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div className="">
+                <span className="bg-red-500 text-white text-xs px-3 py-1 rounded-full">
+                  🔥 SERVICES LIST
+                </span>
+                <h2 className="text-3xl font-bold mt-2">
+                  <span className="text-red-500">Services</span> We Can Help You
+                  With!
+                </h2>
+                <p className="text-gray-400 mt-2">
+                  We help businesses with web development, SEO, and branding.
+                  Our team is dedicated to creating innovative digital solutions
+                  that drive success.
+                </p>
+                <ul className="text-gray-400 mt-2 list-disc list-inside">
+                  <li>Nobis ridiculus cupiditate expedita commodi.</li>
+                  <li>Ipsum dui consider ab quibusdam molestias.</li>
+                </ul>
+                <div className="flex items-center mt-4 space-x-4">
+                  <div className="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center">
+                    <span className="text-sm font-semibold">GS</span>
+                  </div>
+                  <div>
+                    <p className="font-semibold">George Smith</p>
+                    <p className="text-sm text-gray-400">CEO, Director</p>
+                  </div>
+                  <button className="bg-red-500 hover:bg-red-600 px-4 py-2 rounded-lg text-sm font-semibold">
+                    MORE SERVICES
+                  </button>
+                </div>
+              </div>
+              <div className="flex flex-wrap justify-center gap-6 mt-8">
+                <div className="bg-gray-800 p-6 rounded-lg text-center w-60">
+                  <div className="text-red-500 text-4xl mb-2">💻</div>
+                  <h3 className="font-semibold text-lg">Website Development</h3>
+                </div>
+                <div className="bg-gray-800 p-6 rounded-lg text-center w-60">
+                  <div className="text-red-500 text-4xl mb-2">🎨</div>
+                  <h3 className="font-semibold text-lg">
+                    Graphic & Sketch Designing
+                  </h3>
+                </div>
+                <div className="bg-gray-800 p-6 rounded-lg text-center w-60">
+                  <div className="text-red-500 text-4xl mb-2">✍️</div>
+                  <h3 className="font-semibold text-lg">
+                    SEO & Content Writing
+                  </h3>
+                </div>
+                <div className="bg-gray-800 p-6 rounded-lg text-center w-60">
+                  <div className="text-red-500 text-4xl mb-2">📊</div>
+                  <h3 className="font-semibold text-lg">
+                    Digital Market Planning
+                  </h3>
+                </div>
+              </div>

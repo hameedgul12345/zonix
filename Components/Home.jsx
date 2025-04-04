@@ -371,7 +371,7 @@ function Home() {
                     Website <br /> Development
                   </h3>
                 </div>
-                <div className="bg-gray-800  ml-12 md:mr-0 ml-12 md:mr-0  p-6 rounded-lg text-center w-95 h-90 md:w-65 md:h-60">
+                <div className="bg-gray-800   md:mr-0 ml-12   p-6 rounded-lg text-center w-95 h-90 md:w-65 md:h-60">
                   <div className="text-red-500 text-8xl mb-2">
                     <i className="ri-sketching"></i>
                   </div>
