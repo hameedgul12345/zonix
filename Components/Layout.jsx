@@ -3,9 +3,21 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 // import { FaFacebookF, FaTwitter, FaYoutube, FaInstagram } from "react-icons/fa";
-
+import {
+  Code2,
+  PenTool,
+  LayoutDashboard,
+  DraftingCompass,
+  Search,
+  BarChart,
+  Briefcase,
+  LineChart,
+  Info,
+  Settings,
+  Mail,
+} from "lucide-react";
 function Layout({ children }) {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
@@ -193,101 +205,208 @@ function Layout({ children }) {
               drive success. Whether you need a new website, improved search
               rankings, or a fresh brand identity, we’re here to help!
             </p>
-            {/* Social Icons */}
-            <div className="flex items-center space-x-4">
-              <div>
-                <Link href="https://facebook.com">
-                  <i className="ri-facebook-circle-fill text-white text-xl  bg-[#ed3519] p-1 rounded-full "></i>
+            
+          </div>
+          <div className="md:display hidden">
+            <h3 className="text-lg font-semibold text-start mb-4">Social Links</h3>
+           {/* Social Icons */}
+           <div className="flex flex-col items-start space-y-4">
+           <div>
+                <Link href="https://twitter.com">
+                <div className="flex flex-row">
+                 <div>  <i className="ri-twitter-fill  text-white text-xl bg-[#ed3519] p-1 rounded-full "></i></div>
+                  <p className="ml-1"> Twitter</p>
+                  </div>
+                 
                 </Link>
               </div>
               <div>
                 <Link href="https://linkedin.com">
-                  <i className="ri-linkedin-fill text-white text-xl  bg-[#ed3519] p-1 rounded-full "></i>
+                <div className="flex flex-row">
+                 <div> <i className="ri-linkedin-fill text-white text-xl  bg-[#ed3519] p-1 rounded-full "></i></div>
+                  <p className="ml-1"> Linkedin</p>
+                  </div>
+                 
+                </Link>
+              </div>
+              <div>
+                <Link href="https://facebook.com">
+                  <div className="flex flex-row">
+                 <div> <i className="ri-facebook-circle-fill text-white text-xl  bg-[#ed3519] p-1 rounded-full "></i></div>
+                  <p className="ml-1"> Facebook</p>
+                  </div>
                 </Link>
               </div>
               <div>
                 <Link href="https://twitter.com">
-                  <i className="ri-twitter-fill  text-white text-xl bg-[#ed3519] p-1 rounded-full "></i>
+                <div className="flex flex-row">
+                 <div>   <i className="ri-instagram-line  text-white text-xl  bg-[#ed3519] p-1 rounded-full "></i></div>
+                  <p className="ml-1"> Instagram</p>
+                  </div>
+                 
+                </Link>
+              </div>
+             
+            </div>
+          </div>
+
+          {/* Support Section */}
+          <div className="md:display hidden">
+            <h3 className="text-lg font-semibold text-start mb-4">Go to</h3>
+            <div className="flex flex-col items-start space-y-4">
+              <div>
+                <Link href="/">
+                  <div className="flex flex-row">
+                 <div> <i  className="ri-home-9-fill w-7 h-7 text-white text-xl  bg-[#ed3519] p-1 rounded-full "></i></div>
+                  <p className="ml-1"> Home</p>
+                  </div>
+                </Link>
+              </div>
+              <div>
+                <Link href="/aboutus">
+                <div className="flex flex-row">
+                 <div> 
+                 {/* <Info className="w-7 h-7 text-white text-2xl  bg-[#ed3519] p-1  rounded-full" /> */}
+                 <i className="ri-information-2-line w-7 h-7 text-white text-xl  bg-[#ed3519] p-1  rounded-full"></i>
+                 </div>
+                  <p className="ml-1"> About us</p>
+                  </div>
+                 
+                </Link>
+              </div>
+              <div>
+                <Link href="/services">
+                <div className="flex flex-row">
+                 <div>   <Settings className="w-7 h-7 text-white text-xl  bg-[#ed3519] p-1 rounded-full" /></div>
+                  <p className="ml-1"> Services</p>
+                  </div>
+                 
+                </Link>
+              </div>
+              <div>
+                <Link href="/contactus">
+                <div className="flex flex-row">
+                 <div>  <Mail className="w-7 h-7 text-white text-xl  bg-[#ed3519] p-1 rounded-full" /></div>
+                  <p className="ml-1"> Contact us</p>
+                  </div>
+                 
+                </Link>
+              </div>
+            </div>
+          </div>
+<div className="md:hidden display flex flex-row justify-between items-center ">
+ {/* Useful Links */}
+ <div>
+            <h3 className="text-lg font-semibold text-start mb-4">Social Links</h3>
+           {/* Social Icons */}
+           <div className="flex flex-col items-start space-y-4">
+           <div>
+                <Link href="https://twitter.com">
+                <div className="flex flex-row">
+                 <div>  <i className="ri-twitter-fill  text-white text-xl bg-[#ed3519] p-1 rounded-full "></i></div>
+                  <p className="ml-1"> Twitter</p>
+                  </div>
+                 
+                </Link>
+              </div>
+              <div>
+                <Link href="https://linkedin.com">
+                <div className="flex flex-row">
+                 <div> <i className="ri-linkedin-fill text-white text-xl  bg-[#ed3519] p-1 rounded-full "></i></div>
+                  <p className="ml-1"> Linkedin</p>
+                  </div>
+                 
+                </Link>
+              </div>
+              <div>
+                <Link href="https://facebook.com">
+                  <div className="flex flex-row">
+                 <div> <i className="ri-facebook-circle-fill text-white text-xl  bg-[#ed3519] p-1 rounded-full "></i></div>
+                  <p className="ml-1"> Facebook</p>
+                  </div>
                 </Link>
               </div>
               <div>
                 <Link href="https://twitter.com">
-                  <i className="ri-instagram-line  text-white text-xl  bg-[#ed3519] p-1 rounded-full "></i>
+                <div className="flex flex-row">
+                 <div>   <i className="ri-instagram-line  text-white text-xl  bg-[#ed3519] p-1 rounded-full "></i></div>
+                  <p className="ml-1"> Instagram</p>
+                  </div>
+                 
+                </Link>
+              </div>
+             
+            </div>
+          </div>
+
+          {/* Support Section */}
+          <div>
+            <h3 className="text-lg font-semibold text-start mb-4">Go to</h3>
+            <div className="flex flex-col items-start space-y-4">
+              <div>
+                <Link href="/">
+                  <div className="flex flex-row">
+                 <div> <i  className="ri-home-9-fill w-7 h-7 text-white text-xl  bg-[#ed3519] p-1 rounded-full "></i></div>
+                  <p className="ml-1"> Home</p>
+                  </div>
+                </Link>
+              </div>
+              <div>
+                <Link href="/aboutus">
+                <div className="flex flex-row">
+                 <div> 
+                 {/* <Info className="w-7 h-7 text-white text-2xl  bg-[#ed3519] p-1  rounded-full" /> */}
+                 <i className="ri-information-2-line w-7 h-7 text-white text-xl  bg-[#ed3519] p-1  rounded-full"></i>
+                 </div>
+                  <p className="ml-1"> About us</p>
+                  </div>
+                 
+                </Link>
+              </div>
+              <div>
+                <Link href="/services">
+                <div className="flex flex-row">
+                 <div>   <Settings className="w-7 h-7 text-white text-xl  bg-[#ed3519] p-1 rounded-full" /></div>
+                  <p className="ml-1"> Services</p>
+                  </div>
+                 
+                </Link>
+              </div>
+              <div>
+                <Link href="/contactus">
+                <div className="flex flex-row">
+                 <div>  <Mail className="w-7 h-7 text-white text-xl  bg-[#ed3519] p-1 rounded-full" /></div>
+                  <p className="ml-1"> Contact us</p>
+                  </div>
+                 
                 </Link>
               </div>
             </div>
           </div>
 
-          {/* Useful Links */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Useful Links</h3>
-            <ul className="space-y-2 flex flex-row md:flex-col gap-2 justify-center">
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white">
-                  About us
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white">
-                  Careers
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white">
-                  News & Articles
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white">
-                  Legal Notice
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Support Section */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Support</h3>
-            <ul className="space-y-2 flex flex-row md:flex-col gap-2 justify-center">
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white">
-                  Help Center
-                </a> 
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white">
-                  FAQs
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white">
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white">
-                  Terms & Conditions
-                </a>
-              </li>
-            </ul>
-          </div>
-
+</div>
           {/* Contact Information */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Contact Information</h3>
+            <h3 className="text-lg font-semibold text-start mb-4">Contact Information</h3>
             <div className="flex flex-col items-start md:items-start gap-3">
-              <p className="text-gray-400 flex items-center  justify-center md:justify-start">
-                <i className="ri-map-pin-line text-white text-xl bg-[#ed3519] p-1 rounded-full w-8 h-8 flex items-center justify-center mr-2"></i>
-                Dalazak Road Daman Hindki, Peshawar Pakistan
+            <p className="text-gray-400 flex items-center justify-center md:justify-start">
+                <i  className="ri-time-fill text-white text-xl bg-[#ed3519] p-1 rounded-full w-8 h-8 flex items-center justify-center mr-2"></i>
+              24/7 Availabilty
               </p>
               <p className="text-gray-400 flex items-center justify-center md:justify-start">
                 <i className="ri-phone-line text-white text-xl bg-[#ed3519] p-1 rounded-full w-8 h-8 flex items-center justify-center mr-2"></i>
                 0310-5362665
               </p>
+              <p className="text-gray-400 flex items-center  justify-center md:justify-start">
+                <i className="ri-map-pin-line text-white text-xl bg-[#ed3519] p-1 rounded-full w-8 h-8 flex items-center justify-center mr-2"></i>
+                 Peshawar Pakistan
+              </p>
+              
               <p className="text-gray-400 flex items-center justify-center md:justify-start">
                 <i className="ri-mail-line text-white text-xl bg-[#ed3519] p-1 rounded-full w-8 h-8 flex items-center justify-center mr-2"></i>
                 hamidkhan31590@gmail.com
               </p>
+             
             </div>
           </div>
         </div>
