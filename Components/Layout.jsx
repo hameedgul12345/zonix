@@ -277,7 +277,7 @@ function Layout({ children }) {
             <h3 className="text-lg font-semibold mb-4">Contact Information</h3>
             <div className="flex flex-col items-start md:items-start gap-3">
               <p className="text-gray-400 flex items-center  justify-center md:justify-start">
-                <i className="ri-map-pin-line text-white text-xl bg-[#ed3519] p-1 rounded-full w-8 h-8 flex items-center justify-center mr-2"></i>
+                <i className="ri-map-pin-line text-white text-xl bg-[#ed3519] p-1 rounded-full w-8 h-8 flex items-center text-start justify-center mr-2"></i>
                 Dalazak Road Daman Hindki, Peshawar Pakistan
               </p>
               <p className="text-gray-400 flex items-center justify-center md:justify-start">
