@@ -207,97 +207,10 @@ function Layout({ children }) {
             </p>
             
           </div>
-          <div className="md:display hidden">
-            <h3 className="text-lg font-semibold text-start mb-4">Social Links</h3>
-           {/* Social Icons */}
-           <div className="flex flex-col items-start space-y-4">
-           <div>
-                <Link href="https://twitter.com">
-                <div className="flex flex-row">
-                 <div>  <i className="ri-twitter-fill  text-white text-xl bg-[#ed3519] p-1 rounded-full "></i></div>
-                  <p className="ml-1"> Twitter</p>
-                  </div>
-                 
-                </Link>
-              </div>
-              <div>
-                <Link href="https://linkedin.com">
-                <div className="flex flex-row">
-                 <div> <i className="ri-linkedin-fill text-white text-xl  bg-[#ed3519] p-1 rounded-full "></i></div>
-                  <p className="ml-1"> Linkedin</p>
-                  </div>
-                 
-                </Link>
-              </div>
-              <div>
-                <Link href="https://facebook.com">
-                  <div className="flex flex-row">
-                 <div> <i className="ri-facebook-circle-fill text-white text-xl  bg-[#ed3519] p-1 rounded-full "></i></div>
-                  <p className="ml-1"> Facebook</p>
-                  </div>
-                </Link>
-              </div>
-              <div>
-                <Link href="https://twitter.com">
-                <div className="flex flex-row">
-                 <div>   <i className="ri-instagram-line  text-white text-xl  bg-[#ed3519] p-1 rounded-full "></i></div>
-                  <p className="ml-1"> Instagram</p>
-                  </div>
-                 
-                </Link>
-              </div>
-             
-            </div>
-          </div>
 
-          {/* Support Section */}
-          <div className="md:display hidden">
-            <h3 className="text-lg font-semibold text-start mb-4">Go to</h3>
-            <div className="flex flex-col items-start space-y-4">
-              <div>
-                <Link href="/">
-                  <div className="flex flex-row">
-                 <div> <i  className="ri-home-9-fill w-7 h-7 text-white text-xl  bg-[#ed3519] p-1 rounded-full "></i></div>
-                  <p className="ml-1"> Home</p>
-                  </div>
-                </Link>
-              </div>
-              <div>
-                <Link href="/aboutus">
-                <div className="flex flex-row">
-                 <div> 
-                 {/* <Info className="w-7 h-7 text-white text-2xl  bg-[#ed3519] p-1  rounded-full" /> */}
-                 <i className="ri-information-2-line w-7 h-7 text-white text-xl  bg-[#ed3519] p-1  rounded-full"></i>
-                 </div>
-                  <p className="ml-1"> About us</p>
-                  </div>
-                 
-                </Link>
-              </div>
-              <div>
-                <Link href="/services">
-                <div className="flex flex-row">
-                 <div>   <Settings className="w-7 h-7 text-white text-xl  bg-[#ed3519] p-1 rounded-full" /></div>
-                  <p className="ml-1"> Services</p>
-                  </div>
-                 
-                </Link>
-              </div>
-              <div>
-                <Link href="/contactus">
-                <div className="flex flex-row">
-                 <div>  <Mail className="w-7 h-7 text-white text-xl  bg-[#ed3519] p-1 rounded-full" /></div>
-                  <p className="ml-1"> Contact us</p>
-                  </div>
-                 
-                </Link>
-              </div>
-            </div>
-          </div>
-<div className="md:hidden display flex flex-row justify-between items-center ">
- {/* Useful Links */}
- <div>
-            <h3 className="text-lg font-semibold text-start mb-4">Social Links</h3>
+          {/* Useful Links */}
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Social Links</h3>
            {/* Social Icons */}
            <div className="flex flex-col items-start space-y-4">
            <div>
@@ -341,7 +254,7 @@ function Layout({ children }) {
 
           {/* Support Section */}
           <div>
-            <h3 className="text-lg font-semibold text-start mb-4">Go to</h3>
+            <h3 className="text-lg font-semibold mb-4">Go to</h3>
             <div className="flex flex-col items-start space-y-4">
               <div>
                 <Link href="/">
@@ -384,10 +297,9 @@ function Layout({ children }) {
             </div>
           </div>
 
-</div>
           {/* Contact Information */}
           <div>
-            <h3 className="text-lg font-semibold text-start mb-4">Contact Information</h3>
+            <h3 className="text-lg font-semibold mb-4">Contact Information</h3>
             <div className="flex flex-col items-start md:items-start gap-3">
             <p className="text-gray-400 flex items-center justify-center md:justify-start">
                 <i  className="ri-time-fill text-white text-xl bg-[#ed3519] p-1 rounded-full w-8 h-8 flex items-center justify-center mr-2"></i>

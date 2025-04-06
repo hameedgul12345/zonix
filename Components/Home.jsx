@@ -276,19 +276,13 @@ function Home() {
                 .
               </div>
             </div>
-            {/* <h1
+            <h1
               style={{ fontSize: "36px" }}
-              className="md:hidden display text-5xl mt-4 md:text-5xl text-center text-white font-extrabold leading-tight"
+              className="text-5xl mt-4 md:text-5xl text-center text-white font-extrabold leading-tight"
             >
               <span className="text-[#ed3519]">Digital</span> Agency You <br />
               Can Rely Upon!
-            </h1> */}
-            <h1
-  className="text-5xl mt-4 md:text-5xl text-center text-white font-extrabold leading-tight"
->
-  <span className="text-[#ed3519]">Digital</span> Agency You<br className="md:hidden" /> 
-  Can Rely Upon!
-</h1>
+            </h1>
             <p
               style={{ fontSize: "16px" ,lineHeight:'18px'}}
               className="mt-4 px-6 text-center text-white"
