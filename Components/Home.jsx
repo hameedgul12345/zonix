@@ -130,7 +130,6 @@ import {
   LineChart,
 } from "lucide-react";
 import "animate.css";
-import { motion } from "framer-motion";
 function Home() {
   const teamMembers = [
     {
@@ -155,7 +154,6 @@ function Home() {
     },
   ];
 
-  // const reviews = [
   //   {
   //     id: 1,
   //     text: "Vero id posture tempus aspernatur quaerat mollis voluptatum eveniet porro viverra libero habitasse porro.",
@@ -276,19 +274,13 @@ function Home() {
                 .
               </div>
             </div>
-            {/* <h1
+            <h1
               style={{ fontSize: "36px" }}
-              className="md:hidden display text-5xl mt-4 md:text-5xl text-center text-white font-extrabold leading-tight"
+              className="text-5xl mt-4 md:text-5xl text-center text-white font-extrabold leading-tight"
             >
               <span className="text-[#ed3519]">Digital</span> Agency You <br />
               Can Rely Upon!
-            </h1> */}
-            <h1
-  className="text-5xl mt-4 md:text-5xl text-center text-white font-extrabold leading-tight"
->
-  <span className="text-[#ed3519]">Digital</span> Agency You<br className="md:hidden" /> 
-  Can Rely Upon!
-</h1>
+            </h1>
             <p
               style={{ fontSize: "16px" ,lineHeight:'18px'}}
               className="mt-4 px-6 text-center text-white"
@@ -352,28 +344,9 @@ function Home() {
         </div>
       </section>
 
-      {/* Services Section */}
-     
-      <section className="py-10 px-4 bg-black">
-        <div className="flex flex-col items-center ">
-          <div className=" mt-8 flex flex-row items-center justify-center px-2 py-1 w-42 bg-white rounded-2xl gap-2">
-            <div className="bg-[#fe4022] text-[#fe4022] w-2 h-2 text-sm rounded-full flex items-center justify-center">
-              .
-            </div>
-            <h3 className="text-black text-lg">Digital Agency</h3>
-            <div className="bg-[#fe4022] text-[#fe4022] w-2 h-2 text-sm rounded-full flex items-center justify-center">
-              .
-            </div>
-          </div>
-
-          <h1
-            style={{ fontSize: "32px" }}
-            className="text-5xl mt-4 md:text-5xl text-center text-white  font-extrabold leading-tight"
-          >
-            <span className="text-[#ed3519]">Best Services </span> We Can <br />
-            Offer For You !
-          </h1>
-        </div>
+   
+      <section className="w-full bg-[#101828] py-8">
+      
         <div className="max-w-6xl pt-6 mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
             {myServices.map((service, index) => (
@@ -716,265 +689,3 @@ function Home() {
 
 export default Home;
 
-
-
-// 'use client'
-// import React, { useState } from "react";
-// import {
-//   Code2,
-//   PenTool,
-//   LayoutDashboard,
-//   DraftingCompass,
-//   Search,
-//   BarChart,
-//   Briefcase,
-//   LineChart,
-// } from "lucide-react";
-// import "animate.css";
-// import { motion } from "framer-motion";
-
-// function Services() {
-//   const myServices = [
-//     {
-//       title1: "Website",
-//       title2: "Development",
-//       icon: <Code2 size={48} className="text-blue-500 mb-4" />,
-//     },
-//     {
-//       title1: "Graphic",
-//       title2: "Designing",
-//       icon: <PenTool size={48} className="text-red-500 mb-4" />,
-//     },
-//     {
-//       title1: "UI/UX",
-//       title2: "Designing",
-//       icon: (
-//         <LayoutDashboard
-//           size={48}
-//           className="text-purple-500 mb-4 text-center"
-//         />
-//       ),
-//     },
-//     {
-//       title1: "Sketch",
-//       title2: "Designing",
-//       icon: <DraftingCompass size={48} className="text-green-500 mb-4" />,
-//     },
-//     {
-//       title1: "SEO & Content",
-//       title2: "Writing",
-//       icon: <Search size={48} className="text-yellow-500 mb-4" />,
-//     },
-//     {
-//       title1: "Digital Market",
-//       title2: "Planning",
-//       icon: <BarChart size={48} className="text-pink-500 mb-4" />,
-//     },
-//     {
-//       title1: "Business",
-//       title2: "Management",
-//       icon: <Briefcase size={48} className="text-indigo-500 mb-4" />,
-//     },
-//     {
-//       title1: "Market Data",
-//       title2: "Analyzing",
-//       icon: <LineChart size={48} className="text-teal-500 mb-4" />,
-//     },
-//   ];const [isHovered, setIsHovered] = useState(false);
-//   return (
-//     <>
-//       <section className="relative min-h-[500px] flex items-center justify-center">
-//         {/* Background Image with Overlay */}
-//         <div className="absolute inset-0 z-0">
-//           <div
-//             className="w-full h-full bg-[url('/images/b.jpg')] bg-cover bg-center"
-//             style={{ backgroundImage: "url('/images/c.jpg')" }}
-//           >
-//             <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-black/50"></div>
-//           </div>
-//         </div>
-
-//         {/* Content */}
-//         <div className="container mx-auto px-4 relative z-10">
-//           <div className="max-w-3xl mx-auto text-center text-white">
-//             <h1 className="text-4xl font-bold mb-8">Services</h1>
-//             <p className="text-[14px] text-center leading-relaxed">
-//               At Zenix, we specialize in crafting transformative digital
-//               solutions that propel business growth and innovation. Leveraging
-//               our decade-long industry expertise, our seasoned team merges
-//               cutting-edge technical prowess with creative problem-solving to
-//               deliver tailor-made services that align perfectly with your
-//               specific business objectives. From bespoke web development to
-//               strategic digital marketing, we focus on building enduring
-//               partnerships that help organizations successfully adapt to and
-//               thrive in today's rapidly evolving digital ecosystem.
-//             </p>
-//           </div>
-//         </div>
-//       </section>
-
-//       <section className="py-10 px-4 bg-black">
-//         <div className="flex flex-col items-center ">
-//           <div className=" mt-8 flex flex-row items-center justify-center px-2 py-1 w-42 bg-white rounded-2xl gap-2">
-//             <div className="bg-[#fe4022] text-[#fe4022] w-2 h-2 text-sm rounded-full flex items-center justify-center">
-//               .
-//             </div>
-//             <h3 className="text-black text-lg">Digital Agency</h3>
-//             <div className="bg-[#fe4022] text-[#fe4022] w-2 h-2 text-sm rounded-full flex items-center justify-center">
-//               .
-//             </div>
-//           </div>
-
-//           <h1
-//             style={{ fontSize: "32px" }}
-//             className="text-5xl mt-4 md:text-5xl text-center text-white  font-extrabold leading-tight"
-//           >
-//             <span className="text-[#ed3519]">Best Services </span> We Can <br />
-//             Offer For You !
-//           </h1>
-//         </div>
-//         <div className="max-w-6xl pt-6 mx-auto">
-//           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
-//             {myServices.map((service, index) => (
-//               <div
-//               key={index}
-//               className={`p-8 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors group relative
-//                 animate__animated ${isHovered ? 'animate__pulse' : ''}`}
-//               onMouseEnter={() => setIsHovered(true)}
-//               onMouseLeave={() => {
-//                 setIsHovered(false);
-//                 // Force animation restart on next hover
-//                 setTimeout(() => setIsHovered(null), 50);
-//               }}
-//             >
-//               <div className="text-orange-500 text-6xl flex flex-row justify-center items-center">
-//                 {service.icon}
-//               </div>
-//               <div className="space-y-0">
-//                 <h3 className="text-2xl font-bold text-white">
-//                   {service.title1}
-//                 </h3>
-//                 <h3 className="text-2xl font-bold text-white">
-//                   {service.title2}
-//                 </h3>
-//               </div>
-//               <div className="absolute bottom-0 left-0 right-0 h-1 bg-blue-500 opacity-0 group-hover:opacity-100 transition-opacity" />
-//             </div>
-//             ))}
-//           </div>
-//         </div>
-//       </section>
-//     </>
-//   );
-// }
-
-// export default Services;
-/* <section>
-<div className="w-full bg-[#121111]">
-  <div
-    className="relative"
-    style={{
-      minHeight: "100vh", // Full viewport height
-      width: "100%", // Full width
-      backgroundImage: "url('/images/earth.png')",
-      backgroundPosition: "center" /* Center the image */
-      // backgroundRepeat: "no-repeat" /* Do not repeat the image */,
-      // backgroundSize: "cover",
-//   >
-//     <div className="flex flex-col md:flex-row justify-around items-center py-4 gap-4">
-//       <div className="flex flex-col justify-between items-start px-6">
-//         <div className=" mt-16 flex flex-row items-center justify-center px-2 py-1 w-42 bg-white rounded-2xl gap-2">
-//           <div className="bg-[#fe4022] text-[#fe4022] w-2 h-2 text-sm rounded-full flex items-center justify-center">
-//             .
-//           </div>
-//           <h3 className="text-black text-lg">Digital Agency</h3>
-//           <div className="bg-[#fe4022] text-[#fe4022] w-2 h-2 text-sm rounded-full flex items-center justify-center">
-//             .
-//           </div>
-//         </div>
-//         <h1
-//           style={{ fontSize: "42px" }}
-//           className="text-5xl mt-4 md:text-5xl  text-white font-extrabold leading-tight"
-//         >
-//           <span className="text-[#ed3519]">Services</span> We Can
-//           <br />
-//           Help You With !
-//         </h1>
-//         <p className="text-white mt-2">
-//           We help businesses with web development, SEO, and branding.
-//           Our team is dedicated to creating innovative digital solutions
-//           that drive success.
-//         </p>
-//         <ul className="text-white mt-2 list-inside">
-//           <li>
-//             ✅ Custom Website Development for a strong online presence.
-//           </li>
-//           <li>✅ Effective SEO strategies to boost search rankings.</li>
-//           <li>
-//             ✅ User-friendly UI/UX design for seamless experiences.
-//           </li>
-//           <li>
-//             ✅ Digital marketing planning to enhance brand visibility.
-//           </li>
-//         </ul>
-//         <div className="flex flex-row items-center justify-between gap-6 mt-4">
-//           {/* Profile Section */}
-//           <div className="flex flex-row justify-between gap-2 items-start">
-//             <img
-//               src="https://via.placeholder.com/50"
-//               alt="Profile"
-//               className="w-14 h-14 rounded-full border-2 border-red-500"
-//             />
-//             <div className="flex flex-col items-start justify-center">
-//               <h2 className="text-lg text-white font-semibold">
-//                 Hameed Gul
-//               </h2>
-//               <p className="text-gray-400 text-sm">Owner of Zonix</p>
-//             </div>
-//           </div>
-
-//           {/* Divider */}
-//           <div className="h-10 w-px bg-gray-600"></div>
-
-//           {/* Button */}
-//           <button className="bg-red-500 text-white font-semibold px-6 py-2 rounded-full hover:bg-red-600 transition">
-//             MORE SERVICES
-//           </button>
-//         </div>
-//       </div>
-//       <div className="flex flex-wrap justify-center gap-6 mt-8">
-//         <div className="bg-gray-800  ml-12 md:mr-0 p-6 rounded-lg text-center w-95 h-90 md:w-65 md:h-60">
-//           <div className="text-red-500 text-8xl mb-2">
-//             <i className="ri-webhook-line"></i>
-//           </div>
-//           <h3 className="font-semibold text-white text-lg">
-//             Website <br /> Development
-//           </h3>
-//         </div>
-//         <div className="bg-gray-800  ml-12 md:mr-0 ml-12 md:mr-0  p-6 rounded-lg text-center w-95 h-90 md:w-65 md:h-60">
-//           <div className="text-red-500 text-8xl mb-2">
-//             <i className="ri-sketching"></i>
-//           </div>
-//           <h3 className="font-semibold text-lg text-white">
-//             Graphic & Sketch <br /> Designing
-//           </h3>
-//         </div>
-//         <div className="bg-gray-800 p-6 rounded-lg text-center w-95 h-90 md:w-65 md:h-60">
-//           <div className="text-red-500 text-8xl mb-2">✍️</div>
-//           <h3 className="font-semibold text-white text-lg">
-//             SEO & Content <br /> Writing
-//           </h3>
-//         </div>
-//         <div className="bg-gray-800 p-6 rounded-lg text-center w-95 h-90 md:w-65 md:h-60">
-//           <div className="text-red-500 text-8xl mb-2">
-//             <i className="ri-bar-chart-2-line"></i>
-//           </div>
-//           <h3 className="font-semibold text-white text-lg">
-//             Digital Market <br /> Planning
-//           </h3>
-//         </div>
-//       </div>
-//     </div>
-//   </div>
-// </div>
-// </section> */}
