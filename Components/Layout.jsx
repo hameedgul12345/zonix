@@ -392,6 +392,11 @@ function Layout({ children }) {
             <p className="text-gray-400 flex items-center justify-center md:justify-start">
                 <i  className="ri-time-fill text-white text-xl bg-[#ed3519] p-1 rounded-full w-8 h-8 flex items-center justify-center mr-2"></i>
               24/7 Availabilty
+</p>
+              <p className="text-gray-400 flex items-center  justify-center md:justify-start">
+                <i className="ri-map-pin-line text-white text-xl bg-[#ed3519] p-1 rounded-full w-8 h-8 flex items-center text-start justify-center mr-2"></i>
+                Dalazak Road Daman Hindki, Peshawar Pakistan
+
               </p>
               <p className="text-gray-400 flex items-center justify-center md:justify-start">
                 <i className="ri-phone-line text-white text-xl bg-[#ed3519] p-1 rounded-full w-8 h-8 flex items-center justify-center mr-2"></i>
@@ -421,82 +426,3 @@ function Layout({ children }) {
 }
 
 export default Layout;
-
-// import Link from "next/link";
-// import Image from "next/image";
-// import { useState } from "react";
-
-// function Layout({ children }) {
-//   const [isOpen, setIsOpen] = useState(false); // State for mobile menu toggle
-
-//   return (
-//     <div>
-//       {/* Fixed Header */}
-//       <header style={{ backgroundColor: "black", opacity: 0.9 }} className="fixed top-0 left-0 w-full text-white py-6 z-50">
-//         <div className="container mx-auto flex items-center justify-between px-6">
-
-//           {/* Logo */}
-//           <div className="flex items-center">
-//             <Link href="/" passHref>
-//               <Image
-//                 src="/images/logo.png"
-//                 alt="Zenix Logo"
-//                 width={120}
-//                 height={40}
-//                 priority
-//                 className="cursor-pointer"
-//               />
-//             </Link>
-//           </div>
-
-//           {/* Desktop Navigation (Hidden on Mobile) */}
-//           <nav className="hidden md:flex space-x-6 text-lg font-medium">
-//             <Link href="/" passHref className="hover:text-gray-400">Home ▼</Link>
-//             <Link href="/about" passHref className="hover:text-gray-400">About</Link>
-//             <Link href="/pages" passHref className="hover:text-gray-400">Pages ▼</Link>
-//             <Link href="/blog" passHref className="hover:text-gray-400">Blog ▼</Link>
-//             <Link href="/contact" passHref className="hover:text-gray-400">Contact</Link>
-//           </nav>
-
-//           {/* Mobile Menu Button (Hamburger Icon) */}
-//           <button
-//             className="md:hidden text-xl"
-//             onClick={() => setIsOpen(!isOpen)}
-//           >
-//             ☰
-//           </button>
-
-//           {/* Mobile Navigation (Hidden by Default) */}
-//           {isOpen && (
-//             <div className="absolute top-16 left-0 w-full bg-black bg-opacity-90 p-4 flex flex-col space-y-4 md:hidden">
-//               <Link href="/" passHref className="text-white text-lg hover:text-gray-400">Home ▼</Link>
-//               <Link href="/about" passHref className="text-white text-lg hover:text-gray-400">About</Link>
-//               <Link href="/pages" passHref className="text-white text-lg hover:text-gray-400">Pages ▼</Link>
-//               <Link href="/blog" passHref className="text-white text-lg hover:text-gray-400">Blog ▼</Link>
-//               <Link href="/contact" passHref className="text-white text-lg hover:text-gray-400">Contact</Link>
-//             </div>
-//           )}
-
-//           {/* Search & Get a Quote Button */}
-//           <div className="hidden md:flex items-center space-x-4">
-//             <button className="text-lg hover:text-gray-400">🔍</button>
-//             <Link href="/get-quote" className="bg-[#ed3519] hover:bg-red-600 text-white font-bold py-2 px-5 rounded-full" passHref>
-//               GET A QUOTE
-//             </Link>
-//           </div>
-//         </div>
-//       </header>
-
-//       {/* Main Content (Padding Added to Prevent Overlap) */}
-//       <main className="pt-20">
-//         {children}
-//         <div
-//           className="absolute top-0 left-0 w-full h-full bg-cover bg-center"
-//           style={{ backgroundImage: "url('/images/home-bg.jpg')" }}
-//         ></div>
-//       </main>
-//     </div>
-//   );
-// }
-
-// export default Layout;
