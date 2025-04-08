@@ -207,11 +207,12 @@ function Layout({ children }) {
             </p>
           </div>
           <div className="md:block hidden">
-            <h3 className="text-lg font-semibold text-start mb-4">
+            <h3 className="text-lg font-semibold text-start">
               Social Links
             </h3>
+            <hr className="text-orange-500 w-28"/>
             {/* Social Icons */}
-            <div className="flex flex-col items-start space-y-4">
+            <div className="flex flex-col items-start py-4 space-y-4">
               <div>
                 <Link href="https://twitter.com">
                   <div className="flex flex-row">
@@ -261,8 +262,9 @@ function Layout({ children }) {
 
           {/* Support Section */}
           <div className="md:block hidden">
-            <h3 className="text-lg font-semibold text-start mb-4">Go to</h3>
-            <div className="flex flex-col items-start space-y-4">
+            <h3 className="text-lg font-semibold text-start ">Go to</h3>
+            <hr className="text-orange-500 w-12"/>
+            <div className="flex flex-col items-start py-4 space-y-4">
               <div>
                 <Link href="/">
                   <div className="flex flex-row">
@@ -417,10 +419,11 @@ function Layout({ children }) {
           </div>
           {/* Contact Information */}
           <div>
-            <h3 className="text-lg font-semibold text-start mb-4">
+            <h3 className="text-lg font-semibold text-start ">
               Contact Information
             </h3>
-            <div className="flex flex-col items-start md:items-start gap-3">
+            <hr className="text-orange-500 w-44"/>
+            <div className="flex flex-col items-start md:items-start gap-3 py-4">
               <p className="text-gray-400 flex items-center justify-center md:justify-start">
                 <i className="ri-time-fill text-white text-xl bg-[#ed3519] p-1 rounded-full w-8 h-8 flex items-center justify-center mr-2"></i>
                 24/7 Availabilty
@@ -432,17 +435,12 @@ function Layout({ children }) {
               </p>
               <p className="text-gray-400 flex items-center  justify-center md:justify-start">
                 <i className="ri-map-pin-line text-white text-xl bg-[#ed3519] p-1 rounded-full w-8 h-8 flex items-center text-start justify-center mr-2"></i>
-                 Peshawar Pakistan
+                Peshawar Pakistan
               </p>
               <p className="text-gray-400 flex items-center justify-center md:justify-start">
                 <i className="ri-mail-line text-white text-xl bg-[#ed3519] p-1 rounded-full w-8 h-8 flex items-center justify-center mr-2"></i>
                 hamidkhan31590@gmail.com
               </p>
-             
-              
-             
-
-             
             </div>
           </div>
         </div>
