@@ -12,8 +12,6 @@ import {
   LineChart,
 } from "lucide-react";
 import "animate.css";
-import { motion } from "framer-motion";
-
 function Services() {
   const myServices = [
     {

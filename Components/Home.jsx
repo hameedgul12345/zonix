@@ -346,34 +346,32 @@ function Home() {
 
    
       <section className="w-full bg-[#101828] py-8">
-      
         <div className="max-w-6xl pt-6 mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
             {myServices.map((service, index) => (
               <div
-              key={index}
-              className={`p-8 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors group relative
-                animate__animated ${isHovered ? 'animate__pulse' : ''}`}
-              onMouseEnter={() => setIsHovered(true)}
-              onMouseLeave={() => {
-                setIsHovered(false);
-                // Force animation restart on next hover
-                setTimeout(() => setIsHovered(null), 50);
-              }}
-            >
-              <div className="text-orange-500 text-6xl flex flex-row justify-center items-center">
-                {service.icon}
+                key={index}
+                className={`p-8 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors group relative
+                  animate__animated ${isHovered ? 'animate__pulse' : ''}`}
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => {
+                  setIsHovered(false);
+                  setTimeout(() => setIsHovered(null), 50);
+                }}
+              >
+                <div className="text-orange-500 text-6xl flex flex-row justify-center items-center">
+                  {service.icon}
+                </div>
+                <div className="space-y-0">
+                  <h3 className="text-2xl font-bold text-white">
+                    {service.title1}
+                  </h3>
+                  <h3 className="text-2xl font-bold text-white">
+                    {service.title2}
+                  </h3>
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 h-1 bg-blue-500 opacity-0 group-hover:opacity-100 transition-opacity" />
               </div>
-              <div className="space-y-0">
-                <h3 className="text-2xl font-bold text-white">
-                  {service.title1}
-                </h3>
-                <h3 className="text-2xl font-bold text-white">
-                  {service.title2}
-                </h3>
-              </div>
-              <div className="absolute bottom-0 left-0 right-0 h-1 bg-blue-500 opacity-0 group-hover:opacity-100 transition-opacity" />
-            </div>
             ))}
           </div>
         </div>
