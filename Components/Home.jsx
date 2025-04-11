@@ -240,7 +240,8 @@ function Home() {
       title2: "Analyzing",
       icon: <LineChart size={48} className="text-teal-500 mb-4" />,
     },
-  ];const [isHovered, setIsHovered] = useState(false);
+  ];
+  const [isHovered, setIsHovered] = useState(false);
   return (
     <>
       {/* Hero Section */}
@@ -282,7 +283,7 @@ function Home() {
               Can Rely Upon!
             </h1>
             <p
-              style={{ fontSize: "16px" ,lineHeight:'18px'}}
+              style={{ fontSize: "14px", lineHeight: "18px" }}
               className="mt-4 px-6 text-center text-white"
             >
               We help businesses with web development, SEO, and branding. Our
@@ -326,10 +327,11 @@ function Home() {
 
           {/* Description */}
           <p className="mt-4 text-base sm:text-lg text-gray-300 px-2 sm:px-6">
-            We help businesses with web development, SEO, and branding. Our team
-            is dedicated to creating innovative digital solutions that drive
-            success. Whether you need a new website, improved search rankings,
-            or a fresh brand identity, we’re here to help!
+            At Zenix, each team member brings unique skills, creativity, and
+            dedication to the table. From developers and designers to
+            strategists and support staff, our people work collaboratively to
+            deliver innovative solutions that drive success. We believe that
+            great results come from great teamwork.
           </p>
 
           {/* Buttons */}
@@ -344,7 +346,6 @@ function Home() {
         </div>
       </section>
 
-   
       <section className="w-full bg-[#101828] py-8">
         <div className="max-w-6xl pt-6 mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
@@ -352,7 +353,7 @@ function Home() {
               <div
                 key={index}
                 className={`p-8 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors group relative
-                  animate__animated ${isHovered ? 'animate__pulse' : ''}`}
+                  animate__animated ${isHovered ? "animate__pulse" : ""}`}
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => {
                   setIsHovered(false);
@@ -454,6 +455,165 @@ function Home() {
         </div>
       </section>
 
+      <section className="py-16 w-[100%] px-4 overflow-hidden sm:px-6 lg:px-8 bg-[#101828]  relative">
+        <div className="flex mx-auto w-[100%] flex-col md:flex-row justify-center items-start pb-2 gap-4 md:gap-16">
+          <div className="flex flex-col md:w-[33%] w-[100%] justify-between items-start">
+            <div className=" md:mt-16 flex flex-row items-center justify-center py-1 w-42 bg-white rounded-2xl gap-2">
+              <div className="bg-[#fe4022] text-[#fe4022] w-2 h-2 text-sm rounded-full flex items-center justify-center">
+                .
+              </div>
+              <h3 className="text-black text-sm">CLIENT REVIEWS</h3>
+              <div className="bg-[#fe4022] text-[#fe4022] w-2 h-2 text-sm rounded-full flex items-center justify-center">
+                .
+              </div>
+            </div>
+
+            <div className="flex flex-row justify-center items-center gap-4">
+              <h1
+                style={{ fontSize: "34px" }}
+                className="text-[#ed3519] text-lg md:mt-4 md:text-5lg font-semibold leading-tight"
+              >
+                Review's
+              </h1>
+              <h1
+                style={{ fontSize: "34px" }}
+                className="text-lg md:mt-4 md:text-sm text-white font-semibold leading-tight"
+              >
+                Of Clients
+              </h1>
+            </div>
+          </div>
+          <div className="md:w-[33%] w-[100%] text-white md:mt-16">
+            <p>
+              Vero id posuere tempus aspernatur quaerat mollis voluptatum
+              eveniet porro viverra libero habitasse porro fames quos pharetra
+              diam cupidatat ligula reet.
+            </p>
+          </div>
+          <div className="md:w-[25%] w-[100%]">
+            <div className=" md:mt-16 flex flex-row items-center justify-center px-2 py-4 w-42 bg-white rounded-4xl gap-2">
+              <div className="bg-[#fe4022] text-[#fe4022] w-2 h-2 text-sm rounded-full flex items-center justify-center">
+                .
+              </div>
+              <h3 className="text-black text-sm">VIEW MORE</h3>
+              <div className="bg-[#fe4022] text-[#fe4022] w-2 h-2 text-sm rounded-full flex items-center justify-center">
+                .
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="w-[100%] mx-auto flex flex-col md:flex-row justify-center items-center md:mt-2 mt-4  gap-12">
+          <div className="md:w-[33%] w-[50%S] relative ">
+            {/* Image positioned above the box */}
+            <div className="absolute -top-0 left-14 transform -translate-x-1/2 z-10">
+              <Image
+                src="/images/profile.webp"
+                alt="John Smith"
+                width={60}
+                height={60}
+                className="border-4 border-white rounded-full"
+              />
+            </div>
+
+            {/* Dark box positioned below */}
+            <div className="mt-8 rounded-xl text-white pt-8 px-6 pb-2  bg-gray-800  hover:bg-gray-700">
+              <div>
+                <p className="text-sm pt-2">
+                  Vero id posuere tempus aspernatur quaerat mollis voluptatum
+                  eveniet porro viverra libero habitasse porro.
+                </p>
+              </div>
+              <hr className="text-[#292929] mt-2" />
+              <div className="flex flex-row justify-between items-start gap-4">
+                <div className="flex flex-col py-2 justify-center items-start gap-1">
+                  <h1>John Smith</h1>
+                  <h3 className="text-sm">Customer</h3>
+                </div>
+                <div className="flex flex-row justify-center items-center py-2 gap-2">
+                  <i className="ri-star-fill text-yellow-300 text-sm"></i>
+                  <i className="ri-star-fill text-yellow-300 text-sm"></i>
+                  <i className="ri-star-fill text-yellow-300 text-sm"></i>
+                  <i className="ri-star-fill text-yellow-300 text-sm"></i>
+                  <i className="ri-star-fill text-yellow-300 text-sm"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="md:w-[33%] w-[50%S] relative ">
+            {/* Image positioned above the box */}
+            <div className="absolute -top-0 left-14 transform -translate-x-1/2 z-10">
+              <Image
+                src="/images/profile.webp"
+                alt="John Smith"
+                width={60}
+                height={60}
+                className="border-4 border-white rounded-full"
+              />
+            </div>
+
+            {/* Dark box positioned below */}
+            <div className="mt-8 rounded-xl text-white pt-8 px-6 pb-2  bg-gray-800  hover:bg-gray-700">
+              <div>
+                <p className="text-sm pt-2">
+                  Vero id posuere tempus aspernatur quaerat mollis voluptatum
+                  eveniet porro viverra libero habitasse porro.
+                </p>
+              </div>
+              <hr className="text-[#292929] mt-2" />
+              <div className="flex flex-row justify-between items-start gap-4">
+                <div className="flex flex-col py-2 justify-center items-start gap-1">
+                  <h1>John Smith</h1>
+                  <h3 className="text-sm">Customer</h3>
+                </div>
+                <div className="flex flex-row justify-center items-center py-2 gap-2">
+                  <i className="ri-star-fill text-yellow-300 text-sm"></i>
+                  <i className="ri-star-fill text-yellow-300 text-sm"></i>
+                  <i className="ri-star-fill text-yellow-300 text-sm"></i>
+                  <i className="ri-star-fill text-yellow-300 text-sm"></i>
+                  <i className="ri-star-fill text-yellow-300 text-sm"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="md:w-[33%] w-[50%S] relative ">
+            {/* Image positioned above the box */}
+            <div className="absolute -top-0 left-14 transform -translate-x-1/2 z-10">
+              <Image
+                src="/images/profile.webp"
+                alt="John Smith"
+                width={60}
+                height={60}
+                className="border-4 border-white rounded-full"
+              />
+            </div>
+
+            {/* Dark box positioned below */}
+            <div className="mt-8 rounded-xl text-white pt-8 px-6 pb-2  bg-gray-800  hover:bg-gray-700">
+              <div>
+                <p className="text-sm pt-2">
+                  Vero id posuere tempus aspernatur quaerat mollis voluptatum
+                  eveniet porro viverra libero habitasse porro.
+                </p>
+              </div>
+              <hr className="text-[#292929] mt-2" />
+              <div className="flex flex-row justify-between items-start gap-4">
+                <div className="flex flex-col py-2 justify-center items-start gap-1">
+                  <h1>John Smith</h1>
+                  <h3 className="text-sm">Customer</h3>
+                </div>
+                <div className="flex flex-row justify-center items-center py-2 gap-2">
+                  <i className="ri-star-fill text-yellow-300 text-sm"></i>
+                  <i className="ri-star-fill text-yellow-300 text-sm"></i>
+                  <i className="ri-star-fill text-yellow-300 text-sm"></i>
+                  <i className="ri-star-fill text-yellow-300 text-sm"></i>
+                  <i className="ri-star-fill text-yellow-300 text-sm"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section>
         <div className="bg-gray-100 py-12 px-6 text-center">
           <div className="mx-auto mt-16 flex flex-row items-center justify-center px-2 py-1 w-42 bg-white rounded-2xl gap-2">
@@ -519,171 +679,8 @@ function Home() {
           </div>
         </div>
       </section>
-
-      <section className="py-16 w-[100%] px-4 overflow-hidden sm:px-6 lg:px-8 bg-black  relative">
-      <div className="flex mx-auto w-[100%] flex-col md:flex-row justify-center items-start pb-2 gap-4 md:gap-16">
-            <div className="flex flex-col md:w-[33%] w-[100%] justify-between items-start">
-              <div className=" md:mt-16 flex flex-row items-center justify-center py-1 w-42 bg-white rounded-2xl gap-2">
-                <div className="bg-[#fe4022] text-[#fe4022] w-2 h-2 text-sm rounded-full flex items-center justify-center">
-                  .
-                </div>
-                <h3 className="text-black text-sm">CLIENT REVIEWS</h3>
-                <div className="bg-[#fe4022] text-[#fe4022] w-2 h-2 text-sm rounded-full flex items-center justify-center">
-                  .
-                </div>
-              </div>
-
-              <div className="flex flex-row justify-center items-center gap-4">
-                <h1
-                  style={{ fontSize: "34px" }}
-                  className="text-[#ed3519] text-lg md:mt-4 md:text-5lg font-semibold leading-tight"
-                >
-                  Review's
-                </h1>
-                <h1
-                  style={{ fontSize: "34px" }}
-                  className="text-lg md:mt-4 md:text-sm text-white font-semibold leading-tight"
-                >
-                  Of Clients
-                </h1>
-              </div>
-            </div>
-            <div className="md:w-[33%] w-[100%] text-white md:mt-16">
-              <p>
-                Vero id posuere tempus aspernatur quaerat mollis voluptatum
-                eveniet porro viverra libero habitasse porro fames quos pharetra
-                diam cupidatat ligula reet.
-              </p>
-            </div>
-            <div className="md:w-[25%] w-[100%]">
-              <div className=" md:mt-16 flex flex-row items-center justify-center px-2 py-4 w-42 bg-white rounded-4xl gap-2">
-                <div className="bg-[#fe4022] text-[#fe4022] w-2 h-2 text-sm rounded-full flex items-center justify-center">
-                  .
-                </div>
-                <h3 className="text-black text-sm">VIEW MORE</h3>
-                <div className="bg-[#fe4022] text-[#fe4022] w-2 h-2 text-sm rounded-full flex items-center justify-center">
-                  .
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="w-[100%] mx-auto flex flex-col md:flex-row justify-center items-center md:mt-2 mt-4  gap-12">
-            <div className="md:w-[33%] w-[50%S] relative ">
-              {/* Image positioned above the box */}
-              <div className="absolute -top-0 left-14 transform -translate-x-1/2 z-10">
-                <Image
-                  src="/images/profile.webp"
-                  alt="John Smith"
-                  width={60}
-                  height={60}
-                  className="border-4 border-white rounded-full"
-                />
-              </div>
-
-              {/* Dark box positioned below */}
-              <div className="mt-8 rounded-xl text-white pt-8 px-6 pb-2  bg-gray-800  hover:bg-gray-700">
-                <div>
-                  <p className="text-sm pt-2">
-                    Vero id posuere tempus aspernatur quaerat mollis voluptatum
-                    eveniet porro viverra libero habitasse porro.
-                  </p>
-                </div>
-                <hr  className="text-[#292929] mt-2"/>
-                <div className="flex flex-row justify-between items-start gap-4">
-                  <div className="flex flex-col py-2 justify-center items-start gap-1">
-                    <h1>John Smith</h1>
-                    <h3 className="text-sm">Customer</h3>
-                  </div>
-                  <div className="flex flex-row justify-center items-center py-2 gap-2">
-                  <i className="ri-star-fill text-yellow-300 text-sm"></i>
-                  <i className="ri-star-fill text-yellow-300 text-sm"></i>
-                  <i className="ri-star-fill text-yellow-300 text-sm"></i>
-                  <i className="ri-star-fill text-yellow-300 text-sm"></i>
-                  <i className="ri-star-fill text-yellow-300 text-sm"></i>
-                  
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="md:w-[33%] w-[50%S] relative ">
-              {/* Image positioned above the box */}
-              <div className="absolute -top-0 left-14 transform -translate-x-1/2 z-10">
-                <Image
-                  src="/images/profile.webp"
-                  alt="John Smith"
-                  width={60}
-                  height={60}
-                  className="border-4 border-white rounded-full"
-                />
-              </div>
-
-              {/* Dark box positioned below */}
-              <div className="mt-8 rounded-xl text-white pt-8 px-6 pb-2  bg-gray-800  hover:bg-gray-700">
-                <div>
-                  <p className="text-sm pt-2">
-                    Vero id posuere tempus aspernatur quaerat mollis voluptatum
-                    eveniet porro viverra libero habitasse porro.
-                  </p>
-                </div>
-                <hr  className="text-[#292929] mt-2"/>
-                <div className="flex flex-row justify-between items-start gap-4">
-                  <div className="flex flex-col py-2 justify-center items-start gap-1">
-                    <h1>John Smith</h1>
-                    <h3 className="text-sm">Customer</h3>
-                  </div>
-                  <div className="flex flex-row justify-center items-center py-2 gap-2">
-                  <i className="ri-star-fill text-yellow-300 text-sm"></i>
-                  <i className="ri-star-fill text-yellow-300 text-sm"></i>
-                  <i className="ri-star-fill text-yellow-300 text-sm"></i>
-                  <i className="ri-star-fill text-yellow-300 text-sm"></i>
-                  <i className="ri-star-fill text-yellow-300 text-sm"></i>
-                  
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="md:w-[33%] w-[50%S] relative ">
-              {/* Image positioned above the box */}
-              <div className="absolute -top-0 left-14 transform -translate-x-1/2 z-10">
-                <Image
-                  src="/images/profile.webp"
-                  alt="John Smith"
-                  width={60}
-                  height={60}
-                  className="border-4 border-white rounded-full"
-                />
-              </div>
-
-              {/* Dark box positioned below */}
-              <div className="mt-8 rounded-xl text-white pt-8 px-6 pb-2  bg-gray-800  hover:bg-gray-700">
-                <div>
-                  <p className="text-sm pt-2">
-                    Vero id posuere tempus aspernatur quaerat mollis voluptatum
-                    eveniet porro viverra libero habitasse porro.
-                  </p>
-                </div>
-                <hr  className="text-[#292929] mt-2"/>
-                <div className="flex flex-row justify-between items-start gap-4">
-                  <div className="flex flex-col py-2 justify-center items-start gap-1">
-                    <h1>John Smith</h1>
-                    <h3 className="text-sm">Customer</h3>
-                  </div>
-                  <div className="flex flex-row justify-center items-center py-2 gap-2">
-                  <i className="ri-star-fill text-yellow-300 text-sm"></i>
-                  <i className="ri-star-fill text-yellow-300 text-sm"></i>
-                  <i className="ri-star-fill text-yellow-300 text-sm"></i>
-                  <i className="ri-star-fill text-yellow-300 text-sm"></i>
-                  <i className="ri-star-fill text-yellow-300 text-sm"></i>
-                  
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-      </section>
     </>
   );
 }
 
 export default Home;
-

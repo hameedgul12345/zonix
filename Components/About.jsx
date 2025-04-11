@@ -67,14 +67,14 @@ function App() {
           </div>
 
         {/* Title */}
-        <div className="flex flex-row justify-between w-[100%] items-start">
+        <div className="flex md:flex-row flex-col justify-between w-[100%] items-start">
           <div className="w-[35%]">
             <h1 className="text-4xl font-bold mb-6">
               <span className="text-red-500">Introduction</span>{" "}
               <span className="text-[#1e2851]">To Best Digital Agency!</span>
             </h1>
           </div>
-          <div className="text-gray-600 flex flex-row justify-between gap-4 items-start w-[65%] space-y-4">
+          <div className="text-gray-600 flex md:flex-row flex-col justify-between gap-4 items-start md:w-[65%] w-[90%] space-y-4">
             <p className="text-justify">
               At Zonix, we specialize in transforming brands through innovative
               and results-driven digital solutions. Our goal is to help

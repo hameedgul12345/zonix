@@ -29,14 +29,14 @@ function Layout({ children }) {
     <div className="flex flex-col min-h-screen">
       <header
         style={{}}
-        className="fixed top-0 left-0 w-full bg-gray-900 text-white py-6 z-50"
+        className="fixed top-0 left-0 w-full bg-gray-900 text-white py-2 z-50"
       >
         <div className="container mx-auto flex items-center justify-between px-6">
           {/* Logo */}
           <div className="flex items-center">
             <Link href="/" passHref>
               <Image
-                src="/images/logo.png"
+                src="/images/zonixlogo.png"
                 alt="Zenix Logo"
                 width={120}
                 height={40}
@@ -120,19 +120,20 @@ function Layout({ children }) {
 
           {/* Aside Menu */}
           <aside
-            className={` fixed top-0 left-0 h-full bg-black text-white transform ${
+            className={` fixed top-0 left-0 h-full bg-gray-900 text-white transform ${
               isMounted && isOpen ? "w-0 overflow-hidden" : "w-full"
             } transition-[width] duration-300 ease-in-out  md:translate-x-0  md:hidden md:w-1/5`}
           >
-            <div className="p-6">
+            <div className="py-2">
               {/* Close Button (Mobile) */}
               <div
                 style={{ fontSize: "16px" }}
-                className="flex justify-between items-center  py-4 flex-row"
+                className="flex justify-between items-center  flex-row"
+
               >
                 <Link href="/" passHref>
                   <Image
-                    src="/images/logo.png"
+                    src="/images/zonixlogo.png"
                     alt="Zenix Logo"
                     width={120}
                     height={40}
@@ -141,7 +142,7 @@ function Layout({ children }) {
                   />
                 </Link>
                 <button
-                  className="md:hidden text-white text-sm"
+                  className="md:hidden text-white text-[20px] border border-s-emerald-300 mr-6"
                   onClick={() => setIsOpen(!isOpen)}
                 >
                   ✖
@@ -149,29 +150,29 @@ function Layout({ children }) {
               </div>
 
               {/* Navigation Links */}
-              <nav className="mt-10  space-y-4 text-lg">
+              <nav className="space-y-4 ml-8 text-lg">
                 <div>
-                  <Link href="/" passHref>
+                  <Link href="/"  onClick={() => setIsOpen(!isOpen)} passHref>
                     Home
                   </Link>
                 </div>
                 <div>
-                  <Link href="/about" passHref>
+                  <Link href="/about"  onClick={() => setIsOpen(!isOpen)} passHref>
                     About
                   </Link>
                 </div>
                 <div>
-                  <Link href="/services" passHref>
+                  <Link href="/services"  onClick={() => setIsOpen(!isOpen)} passHref>
                     Services
                   </Link>
                 </div>
                 <div>
-                  <Link href="/portfolio" passHref>
+                  <Link href="/portfolio"  onClick={() => setIsOpen(!isOpen)} passHref>
                     Portfolio
                   </Link>
                 </div>
                 <div>
-                  <Link href="/contactus" passHref>
+                  <Link href="/contactus"  onClick={() => setIsOpen(!isOpen)} passHref>
                     Contact us
                   </Link>
                 </div>
