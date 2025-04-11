@@ -213,6 +213,7 @@ function Layout({ children }) {
             <hr className="text-orange-500 w-28"/>
             {/* Social Icons */}
             <div className="flex flex-col items-start py-4 space-y-4">
+              
               <div>
                 <Link href="https://twitter.com">
                   <div className="flex flex-row">
