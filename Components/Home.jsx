@@ -377,83 +377,6 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="text-center py-12 bg-white">
-        {/* Header Section */}
-        <div className="flex flex-col items-center justify-center px-2">
-          <div className=" flex flex-row items-center justify-center px-2 py-1 w-42 bg-white shadow-lg shadow-blue-200 rounded-2xl gap-2">
-            <div className="bg-[#fe4022] text-[#fe4022] w-2 h-2 text-sm rounded-full flex items-center justify-center">
-              .
-            </div>
-            <h3 className="text-black text-lg">Digital Agency</h3>
-            <div className="bg-[#fe4022] text-[#fe4022] w-2 h-2 text-sm rounded-full flex items-center justify-center">
-              .
-            </div>
-          </div>
-          <h2 className="text-3xl font-bold mt-3">
-            <span className="text-red-500">Activities</span> We Completed
-          </h2>
-          <p className="text-gray-500 mt-2 max-w-2xl mx-auto">
-            Sint nascetur facere, delectus conubia consequuntur, nonummy
-            distinctio! Non officiis, id natus non nisi provident justo.
-          </p>
-        </div>
-
-        {/* Grid Section */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-6 max-w-5xl mx-auto">
-          {/* Portfolio Items */}
-          {[
-            {
-              img: "/images/a.jpg",
-              title: "Digital Marketing",
-            },
-            { img: "/images/b.jpg", title: "Web Development" },
-            { img: "/images/c.jpg", title: "Planning And Development" },
-            { img: "/images/d.jpg", title: "Group Meeting" },
-            { img: "/images/e.jpg", title: "Plan Implementation" },
-            { img: "/images/f.jpg", title: "Business Management" },
-          ].map((item, index) => (
-            <div
-              key={index}
-              className="relative group rounded-lg overflow-hidden shadow-lg"
-            >
-              <img
-                src={item.img}
-                alt={item.title}
-                className="w-full h-full object-cover"
-              />
-              {item.title && (
-                <div
-                  style={{
-                    position: "absolute",
-                    top: 0,
-                    left: 0,
-                    width: "100%",
-                    height: "100%",
-                    backgroundColor: "rgba(0, 0, 0, 0)", // Default transparent
-                    transition: "background-color 0.75s ease-in-out",
-                  }}
-                  onMouseEnter={(e) =>
-                    (e.currentTarget.style.backgroundColor =
-                      "rgba(0, 0, 0, 0.5)")
-                  }
-                  onMouseLeave={(e) =>
-                    (e.currentTarget.style.backgroundColor = "rgba(0, 0, 0, 0)")
-                  }
-                  className="absolute inset-0  flex items-center justify-center opacity-0 group-hover:opacity-100 transition"
-                >
-                  <div className="text-white text-center p-4">
-                    <h3 className="text-lg font-bold">{item.title}</h3>
-                    <p className="text-sm">
-                      Ullam aliquet metus dignissim scelerisque. Anim
-                      exercitation officiis, accusamus.
-                    </p>
-                  </div>
-                </div>
-              )}
-            </div>
-          ))}
-        </div>
-      </section>
 
       <section className="py-16 w-[100%] px-4 overflow-hidden sm:px-6 lg:px-8 bg-[#101828]  relative">
         <div className="flex mx-auto w-[100%] flex-col md:flex-row justify-center items-start pb-2 gap-4 md:gap-16">
@@ -462,7 +385,7 @@ function Home() {
               <div className="bg-[#fe4022] text-[#fe4022] w-2 h-2 text-sm rounded-full flex items-center justify-center">
                 .
               </div>
-              <h3 className="text-black text-sm">CLIENT REVIEWS</h3>
+              <h3 className="text-black text-sm">OUR CLIENT SAYS</h3>
               <div className="bg-[#fe4022] text-[#fe4022] w-2 h-2 text-sm rounded-full flex items-center justify-center">
                 .
               </div>
@@ -485,9 +408,10 @@ function Home() {
           </div>
           <div className="md:w-[33%] w-[100%] text-white md:mt-16">
             <p>
-              Vero id posuere tempus aspernatur quaerat mollis voluptatum
-              eveniet porro viverra libero habitasse porro fames quos pharetra
-              diam cupidatat ligula reet.
+              Our clients appreciate our tailored approach, attention to detail,
+              and commitment to delivering results. They trust us to bring their
+              ideas to life with professionalism and creativity, consistently
+              exceeding expectations.
             </p>
           </div>
           <div className="md:w-[25%] w-[100%]">
@@ -629,8 +553,10 @@ function Home() {
             <span className="text-red-500">Team</span> Members
           </h2>
           <p className="text-gray-500 max-w-2xl mx-auto mt-4">
-            Sint nascetur facere, delectus conubia consequuntur, nonummy
-            distinctio! Non officiis, id natus non nisl provident justo.
+            Our team is a blend of creative minds and skilled professionals,
+            each bringing unique strengths to the table. Together, we work with
+            passion and purpose to deliver high-quality solutions for our
+            clients.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
             {teamMembers.map((member, index) => (

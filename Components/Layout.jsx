@@ -188,7 +188,7 @@ function Layout({ children }) {
         <div className="max-w-6xl mx-auto px-5 grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
           {/* Brand & Socials */}
           <div className="flex justify-between items-center md:items-start flex-col gap-4">
-            <div className="flex items-center">
+            <div className="flex items-start  flex-col gap-2">
               <Link href="/" passHref>
                 <Image
                   src="/images/logo.png"
@@ -199,6 +199,7 @@ function Layout({ children }) {
                   className="cursor-pointer w-auto h-auto"
                 />
               </Link>
+              <hr className="text-orange-500 w-28"/>
             </div>
             <p className="text-gray-400 text-sm mb-6">
               We help businesses with web development, SEO, and branding. Our
